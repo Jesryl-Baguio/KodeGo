@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Exercises</title>
+  <style>
+      body h1 {
+      width: 35%;
+      margin-left: 41%;
+    }
+    form {
+      border: 1px solid black;
+      width: 530px;
+      margin-left: 32%;
+      padding-left: 30px;
+      background: rgb(80, 145, 243);
+    }
+    .inline {
+      display: inline-block;
+    }
+    .button{
+      display: block;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Race Registration!</h1>
+  <form action="">
+    <!-- text input -->
+    <P>
+      <label for="first name">First Name</label>
+      <input type="text" name="first name" id="first name" required>
+
+      <label for="last name">Last name</label>
+      <input type="text" name="last name" id="last name" required>
+    </P>
+    <p>Select a Race:</p>
+    <input type="radio" name="genre" id="run run 5k" value="fun run 5k">
+    <!-- radio input -->
+    <label for="fun run 5k">Fun Run 5k</label>
+    <br>
+      <input type="radio" name="genre" id="Half Marathon" value="Half Marathon">
+    <label for="Half Marathon">Half Marathon</label>
+    <br>
+      <input type="radio" name="genre" id="Full Marathon" value="Full Marathon">
+    <label for="Full Marathon">Full Marathon</label>
+    <br>
+    <!-- email input -->
+    <label for="email">Email</label>
+      <input type="email" name="email" id="email" required>
+    <label for="Password">Password</label>
+      <input type="password" name="user_password" id="password" required>
+    <!-- dropdown input -->
+    <label class="inline" for="age">Select Age Group</label>
+      <select name="age" id="age">
+        <option class="inline" value="under">under 18</option>
+      </select>
+    <!-- button -->
+    <button class="button">Register</button>
+  </form>
+</body>
+</html>
