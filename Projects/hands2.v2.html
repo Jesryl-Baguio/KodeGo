@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: arial;
+      /* header-css */
+    }
+    nav {
+      background-color: rgb(30, 30,30) ;
+      padding: 15px 25px; 
+    }
+    .brand-container {
+      display: inline-block;
+    }
+
+    .brand {
+      display: inline-block;
+      margin: 0;
+      color: white;
+      font-family: verdana;
+      padding-left: 5px;
+      position: relative;
+      top:-2px ;
+         }
+    .link-container {
+      float: right;
+      position: relative;
+      top: 15px;
+    }
+    .link {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-family: verdana;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+    .link:hover {
+      color: rgb(238, 212, 63);
+      cursor: pointer;
+    }
+    .btn-link {
+      background-color: rgb(238, 212, 63);
+      padding: 10px 25px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      border-radius: 25px;
+      transition: 0.2s;
+      font-family: verdana;
+    }
+    .btn-link:hover {
+      padding: 12px 28px;
+      cursor: pointer;
+
+      /* aside-css */
+    }
+    aside {
+      width: 200px;
+      margin-top: 3px;
+      height: 770px;
+      color: white;
+      background-color: rgb(32, 31, 31);
+      box-shadow: 0 0 2px;
+      position: fixed;
+    }
+    .aside-brand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: c;
+      height: 20px;
+    }
+     .aside-header {
+      font-weight: bold;
+      font-family: verdana;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      line-height: 60px;
+      font-size: 20px;
+      background-color: rgb(238, 212, 63);
+      color: black;
+      }
+     .aside-link {
+      font-family: verdana;
+      display: flex;
+      text-align: left;
+      flex-direction: column;
+      line-height: 60px;
+      font-size: 16px;
+      font-weight: bold;
+      padding-left: 20px;
+      transition: 0.5s ease;
+      }
+      .aside-link:hover {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+      }
+      .aside-signout {
+        font-family: verdana;
+        text-align: center;
+        padding: 10px;
+        width: 180px;
+        font-weight: bold;
+        margin-top: 230px;
+        margin-left: 8px;
+        background-color: rgb(238, 212, 63);
+        border-radius: 5px;
+        color: black;
+        transition: 0.3s ease;
+       }
+       .aside-signout:hover {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+       }
+    
+       /* HERO PAGE  */
+       .main-container {
+        display: inline-block;
+        font-family: verdana;
+        padding-left: 220px;
+        padding-top: 20px;
+        margin: 0;
+        width: 45%;
+        /* border: 2px solid black; */
+        height: 200px;
+        }
+        .main-container-h {
+          font-size: 50px;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          width: 500px;
+          padding-left: 150px;
+        }      
+
+        .main-container-p {
+         font-size: 12px;
+         margin-bottom: 10px; 
+         }
+        
+          
+        .container-right {
+          float: right;
+          /* border: 2px solid black; */
+          width:   47% ;
+          height: 200px;  
+          
+        }
+        .ctn-right-h {
+          font-size:40px;
+          font-weight: lighter;
+          display: flex;
+          text-align: center;
+          line-height: 50px;
+          margin-top: 20px;
+          width: 80%;   
+          line-height: 40px;
+        }
+        .ctn-right-p {
+          padding-top: 10px  ;
+          padding-bottom: 10px;
+          display: flex;
+          text-align: center;
+          font-size: 20px;
+         width: 80%;
+        }
+         /* Image section */
+        .container-bottom {
+            padding-left: 220px;
+                /* border: 2px solid black; */
+                width: 50%;
+                height: 300px;
+                padding-top: 20px;
+            }
+        .image1-container1 {
+            display: inline-block;
+            height: 100px;
+            margin-left: 0; 
+        }
+        .image1 {
+          height: 100%;
+        }
+        .image1-h {
+          font-size: 23px;
+          padding-left: 15px;
+        }
+        .image1-p {
+          font-size: 16px;
+          padding-left: 15px;
+        }
+        .image1-container2  {
+         margin-bottom: 10px;
+         display: inline-block;
+         height: 65px;
+         width:75%;
+         vertical-align: top;  
+        }
+        .image2-container1 {
+         display: inline-block;
+         width: 73%;
+         }
+         .image2-container2 {
+            
+            width: 150px;
+            height: 100px;
+            display: inline-block;
+            /* margin-top: 10px; */
+         }
+         .image2 {
+            width: 100%;
+            height: 100%;
+         }
+         .image2-h {
+          font-size: 23px;
+          padding-left: 15px;
+        }
+        .image2-p {
+          font-size: 16px;
+          padding-left: 15px;
+          vertical-align: top;
+             }
+            
+
+
+
+
+
+       
+
+      /* footer-css */
+    footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: rgb(0, 0, 0) ;
+      padding: 25px 25px; 
+      color: white;
+      text-align: center;
+      font-family: verdana;
+      font-weight: bold;
+    }
+    .name {
+      color: gray;
+    }
+    </style>
+</head>
+<body>
+  <!-- Header Page -->
+  <header>
+    <nav>
+      <div class="brand-container">
+        <img src="images/quack_logo-removebg-preview.png" width="40px" alt="">
+        <h2 class="brand">WEB WONDERS</h2>
+      </div>
+      <div class="link-container">
+        <a class="link" href="#">Home</a>
+        <a class="link" href="#">About</a>
+        <a class="link" href="#">Testimony</a>
+        <a class="link" href="#">Contacts Us</a>
+        <a class="btn-link" href="#">Sign in</a>
+      </div>
+    </nav>
+  </header>
+    <!-- Aside html -->
+  <aside>
+    <div>
+      <ul>
+        <h3 class="aside-header">DASHBOARD</h3>
+        <li class="aside-link"><a href="#"></a>Account</li>
+        <li class="aside-link"><a href="#"></a>Profile</li>
+        <li class="aside-link"><a href="#"></a>Forms</li>
+        <li class="aside-link"><a href="#"></a>Tables</li>
+        <li class="aside-link"><a href="#"></a>Courses</li>
+        <li class="aside-link"><a href="#"></a>Projects</li>
+        <li class="aside-link"><a href="#"></a>Recordings</li>
+      </ul>
+      <div>
+        <h3 class="aside-signout">Sign out</h3>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Hero Html-->
+  <div class="main-container">
+    <h2 class="main-container-h">Free online courses for tech jobs</h2> 
+  </div>
+    <div class="container-right">
+        <h5 class="ctn-right-h">It's not just about learning. It's about doing.</h5> 
+        <p class="ctn-right-p">Learn through innovative, practice-oriented courses that prepare you with real, job-ready skills. Developed with Web Wonders Academy expertise and backed by learning science.</p>
+    </div>
+  </div>
+
+  <div class="container-bottom">
+    <div class="image1-container1">
+        <img class="image1" src="thumbnails/Cybersecurity.png" alt="">
+    </div>
+    <div class="image1-container2">
+        <h5 class="image1-h">Cybersecurity</h5>
+        <p class="image1-p">Cyber attacks increase with every digital connection made around the world. Smart cyber professionals are needed across the globe. Explore this exciting field of career possibilities.</p>
+    </div>
+
+    <div class="image2-container1">
+        <h5 class="image2-h">Networking </h5>
+        <p class="image2-p">In today's hyperconnected world, networking is how an ever-expanding array of devices communicate with one another. Learn the fundamentals you'll need to launch a career in this critical field.</p>
+    </div>  
+
+    <div class="image2-container2">
+        <img class="image2" src="thumbnails/Networking.png" alt="">
+    </div>
+  </div>
+    
+  
+
+
+
+
+
+
+  <!--Footer html -->
+  <footer>
+    <p>Copyright&copy;2023 KodeGo-WD87P. Designed by <span class="name">JESRYL BAGUIO</span></p>
+  </footer>
+</body>
+</html>
